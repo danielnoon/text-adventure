@@ -7,7 +7,7 @@ export default function useObserver<T>(obs: Observable<T>, defaultValue?: T) {
   useEffect(() => {
     const subscription = obs.subscribe((val) => setVal(val));
 
-    () => void subscription.unsubscribe();
+    return () => void subscription.unsubscribe();
   }, [obs]);
 
   return val;
