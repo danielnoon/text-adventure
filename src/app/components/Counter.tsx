@@ -1,4 +1,4 @@
-import { FC } from "react";
+import React, { FC } from "react";
 import manager from "../state/manager";
 import useGameState from "../state/useGameState";
 
