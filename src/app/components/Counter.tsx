@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import manager from "../state/manager";
-import useGameState from "../state/useGameState";
+import useGameState from "../../lib/hooks/useGameState";
 
 const Counter: FC = () => {
   const count = useGameState<number>("var/count", manager);

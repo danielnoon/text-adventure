@@ -16,7 +16,9 @@ type SignatureParameter =
 
 type UtilityParameter = string | number | boolean | Group;
 
-export type UtilityFunction = (...params: UtilityParameter[]) => void | string;
+export type UtilityFunction = (
+  ...params: UtilityParameter[]
+) => void | string | boolean;
 
 export type UtilityFactory = ((
   store: Store,

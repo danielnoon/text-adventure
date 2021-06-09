@@ -1,4 +1,4 @@
-import { Manager } from "../../lib/Manager";
+import { Manager } from "../Manager";
 import useObserver from "./useObserver";
 
 export default function useGameState<T>(path: string, manager: Manager) {
