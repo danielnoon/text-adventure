@@ -10,7 +10,9 @@
     "build:copy": "copyfiles src/public/**/* -u 2 dist",
     "build:bundle": "esbuild src/app/index.tsx --bundle --outfile=dist/bundle.js",
     "serve": "serve dist",
-    "dev": "run-p build:watch serve"
+    "dev": "run-p build:watch serve",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "author": "Daniel Noon",
   "license": "MIT",
@@ -27,6 +29,13 @@
     "yaml": "^1.10.2"
   },
   "devDependencies": {
-    "@types/react": "^17.0.9"
+    "@babel/core": "^7.14.3",
+    "@storybook/addon-actions": "^6.2.9",
+    "@storybook/addon-essentials": "^6.2.9",
+    "@storybook/addon-links": "^6.2.9",
+    "@storybook/react": "^6.2.9",
+    "@types/node": "^15.12.2",
+    "@types/react": "^17.0.9",
+    "babel-loader": "^8.2.2"
   }
 }
